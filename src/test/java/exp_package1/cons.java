@@ -4,17 +4,23 @@ public class cons {
 
     String name;
     Boolean result;
-    int percentage;
+    int percentage = 0;
 
-
-    cons(String name , Boolean result){
+    public cons(String name, Boolean result) {
         this.name = name;
         this.result = result;
-
+        this.percentage = 0;
     }
 
     public cons() {
-        System.out.println(percentage);
+        this.name = "";
+        this.result = false;
+        this.percentage = 0;
     }
+
+    @Override
+    public String toString() {
+        return "cons{name='" + name + "', result=" + result + ", percentage=" + percentage + "}";
     }
+}
 
