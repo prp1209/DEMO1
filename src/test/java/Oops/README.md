@@ -1,4 +1,4 @@
-# exp_package1 Documentation
+# Oops Documentation
 
 ## Overview
 This package contains Java classes demonstrating object creation and string representation.
@@ -50,7 +50,16 @@ cons{name='Test', result=true, percentage=0}
 ## Key Features
 ✅ Proper constructor initialization of all fields  
 ✅ Override toString() for meaningful object representation  
-✅ Demonstrates object creation and usage in main method
+✅ Demonstrates object creation and usage in main method  
+✅ Demonstrates method overloading with multiple `fetch` signatures in `InheritanceDemo`
+
+### Method Overloading and Overriding
+`Dog` overloads `fetch` by providing both `fetch()` and `fetch(String toy)`.
+These methods have the same name but different parameter lists, so the compiler
+selects the appropriate method based on the arguments.
+
+`Dog.speak()` overrides `Animal.speak()` because it uses the same method signature
+to provide dog-specific behavior at runtime.
 
 ## Notes
 - The unused import `javax.xml.namespace.QName` can be removed if not needed
