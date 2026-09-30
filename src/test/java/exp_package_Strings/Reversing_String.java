@@ -5,17 +5,17 @@ public class Reversing_String
 
     public static void main(String[] args)
     {
+        String s="Maths";
 
-        String s="Pawan Kumar";
+        String rev="";
 
-        String[] words = s.split("\\s+");
-        for (int i = words.length - 1; i >= 0; i--)
+        for(int i=s.length()-1;i>=0;i--)
         {
-            System.out.print(words[i]);
-            if (i > 0)
-            {
-                System.out.print(" ");
-            }
+
+            rev=rev + s.charAt(i);
         }
+        System.out.println(rev);
     }
 }
+//Reverse string “Test@59I” but ‘@59’ should not be reversed
+//output : "Itse@59T"
