@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class ReverseArray {
 
-    public static void recursive_array(int[] arr, int start, int end) {
+    public static void recursive_array(int[] arr, int start, int end)
+    {
         if (start >= end) {
             return;
         }
@@ -16,7 +17,8 @@ public class ReverseArray {
         recursive_array(arr, start + 1, end - 1);
     }
 
-    private static int[] readArrayValues(Scanner sc, int size) {
+    private static int[] readArrayValues(Scanner sc, int size)
+    {
         int[] values = new int[size];
         System.out.println("Enter " + size + " elements (space or comma separated):");
 
@@ -31,7 +33,8 @@ public class ReverseArray {
             return values;
         }
 
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++)
+        {
             values[i] = Integer.parseInt(tokens[i]);
         }
         return values;
