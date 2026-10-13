@@ -14,19 +14,22 @@ public class Practice4 {
         String[] word=str.split(" ");
 
         String reverse="";
+        String reverseword = "";
+        char[] ch=str.toCharArray();
 
+            for (int i = ch.length - 1; i >= 0; i--) {
 
-        for (String w : word) {
-
-            String reverseword = "";
-            for (int i = w.length() - 1; i >= 0; i--) {
-
-                reverseword = reverseword + w.charAt(i);
+                reverseword = reverseword + ch[i];
             }
             reverse = reverse + reverseword + " ";
+        {
+            System.out.println(reverse);
+        }
         }
 
 
-        System.out.println(reverse);
+
+
+
     }
-}
+
